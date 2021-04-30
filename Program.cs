@@ -141,7 +141,7 @@ namespace PingPong
                 ballDirectionUp = true;
                 firstPlayerResult++;
                 Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2);
-                Console.WriteLine("Първи играч печели :)");
+                Console.WriteLine("First Player Win! :)");
                 Console.ReadKey();
             }
             if (ballPositionX == 0)
@@ -151,7 +151,7 @@ namespace PingPong
                 ballDirectionUp = true;
                 secondPlayerResult++;
                 Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2);
-                Console.WriteLine("Втори играч печели :)");
+                Console.WriteLine("Second Player Win! :)");
                 Console.ReadKey();
             }
 
@@ -202,11 +202,11 @@ namespace PingPong
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo keyInfo = Console.ReadKey();
-                    if (keyInfo.Key == ConsoleKey.W)
+                    if (keyInfo.Key == ConsoleKey.UpArrow)
                     {
                         MoveFirstPlayerUp();
                     }
-                    if (keyInfo.Key == ConsoleKey.S)
+                    if (keyInfo.Key == ConsoleKey.DownArrow)
                     {
                         MoveFirstPlayerDown();
                     }
